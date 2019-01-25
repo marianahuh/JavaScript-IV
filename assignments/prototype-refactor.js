@@ -15,7 +15,7 @@ class GameObject {
   destroy() {
     return (`${this.name} was removed from the game.`);
   }
-} //Parent Object
+} //Base Class
 
 
 class CharacterStats extends GameObject {
@@ -27,7 +27,7 @@ class CharacterStats extends GameObject {
   takeDamage() {
     return (`${this.name} took damage.`);
   }
-} //Child Object
+} //Child Class
 
 
 
@@ -41,7 +41,7 @@ class Humanoid extends CharacterStats {
   greet() {
     return (`${this.name} offers a greeting in ${this.language}.`);
   }
-}// GrandChild Object
+}// GrandChild Class
 
 
 
