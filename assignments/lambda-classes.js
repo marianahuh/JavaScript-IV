@@ -35,7 +35,7 @@ class Student extends Instructor {
     this.favSubjects = studentAttrs.favSubjects;
   }
   listSubjects(favSubjects) {
-    console.log(`${favSubjects}`);
+    console.log(`${this.favSubjects}`);
   }
   PRAssignment(student, subject) {
     console.log(`${student.name} has submitted a PR for ${subject}.`);
@@ -98,4 +98,4 @@ amy.listSubjects();
 amy.PRAssignment(amy, 'CSS');
 amy.sprintChallenge(amy, 'JavaScript');
 console.log(bob.standUp());
-console.log(bob.debugsCode(bob, amy, JavaScript));
+console.log(bob.debugsCode(bob, amy, 'JavaScript'));
